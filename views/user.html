@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rank</title>
+</head>
+<body>
+    <form action="/user/" method="GET" id="form1">
+        <center>
+            姓名：<input type='text' id="id" onchange="getid()"><br>
+            <p><input type='submit' value='送出'></p>
+        </center>
+    </form>
+    <script type="text/javascript">
+        function getid(){
+            var id=document.getElementById("id").value;
+            var f1=document.getElementById("form1");
+            f1.action = "/user/" + id 
+        }
+    </script>  
+</body>
+</html>
+
